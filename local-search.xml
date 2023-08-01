@@ -4,6 +4,64 @@
   
   
   <entry>
+    <title>以前玩巫师3玩的🤣</title>
+    <link href="/2023/08/01/%E4%BB%A5%E5%89%8D%E7%8E%A9%E5%B7%AB%E5%B8%883%E7%8E%A9%E7%9A%84/"/>
+    <url>/2023/08/01/%E4%BB%A5%E5%89%8D%E7%8E%A9%E5%B7%AB%E5%B8%883%E7%8E%A9%E7%9A%84/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>我以前居然写过这种东西？😂😂 先马克下</p></blockquote><ul><li>瘟疫女事件<ul><li>别特么什么都信.</li></ul></li><li>岛城铸匠选择温柔处理撒谎、对方诬陷我说我杀了他女儿抢东西从此不在做生意<ul><li>除非格外必要,不要把自己当做居委会大妈,该说实话说实话.</li></ul></li><li>Ciri实验室没有选择让她砸,导致最后死亡<ul><li>要去站在别人角度理解别人的痛苦,而不是评自己的感觉去影响别人</li></ul></li><li>白狼两个女人,明知道不能都拿下还是因为心软无法拒绝,导致最终分尸<ul><li>一定别把自己当救世主,一定弄明白自己真正想要什么,一定珍惜得到了东西.</li></ul></li></ul><blockquote><p>当时应该是觉得巫师3的剧情太“见血”又”真实“了，就赶忙总结了下来。（我真naive）我不确定是不是抄了其他人的心得，但是如果侵犯了您的权利，请立马联系我，我将马上删除🤣</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>巫师3</tag>
+      
+      <tag>感悟</tag>
+      
+      <tag>随笔</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>在ubuntu 20+安装与使用多版本python</title>
+    <link href="/2023/08/01/%E5%9C%A8ubuntu20%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%ACpython/"/>
+    <url>/2023/08/01/%E5%9C%A8ubuntu20%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%ACpython/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文基于大语言模型生成</p></blockquote><h3 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h3><ol><li><p>安装必要的依赖</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br>sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \<br>libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils \<br>tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev<br></code></pre></td></tr></table></figure></li><li><p>安装 pyenv</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl https://pyenv.run | bash<br></code></pre></td></tr></table></figure><ol><li><p>对于 bash，你可以编辑 ~&#x2F;.bashrc 文件；对于 zsh，你可以编辑 ~&#x2F;.zshrc 文件。</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">vim ~/.bashrc<br></code></pre></td></tr></table></figure></li><li><p>添加以下行：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> PATH=<span class="hljs-string">&quot;~/.pyenv/bin:<span class="hljs-variable">$PATH</span>&quot;</span><br><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(pyenv init -)</span>&quot;</span><br><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(pyenv virtualenv-init -)</span>&quot;</span><br></code></pre></td></tr></table></figure></li><li><p>保存并关闭文件,运行以下命令使改动立即生效：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">source</span> ~/.bashrc   <span class="hljs-comment"># 对于 bash</span><br><span class="hljs-comment"># 或者</span><br><span class="hljs-built_in">source</span> ~/.zshrc    <span class="hljs-comment"># 对于 zsh</span><br></code></pre></td></tr></table></figure></li></ol></li><li><p>现在你可以安装 Python 3.9 和 Python 3.11 了。在终端中运行以下命令：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">pyenv install 3.9.0<br>pyenv install 3.11.0<br></code></pre></td></tr></table></figure></li><li><p>一旦安装完成，使用 pyenv global 命令设置默认的 Python 版本，或者使用 pyenv local 在特定的目录中设置 Python 版本。</p></li></ol><h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><ul><li><p>下面的命令会将全局 Python 版本设置为 3.9.0。例如：</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pyenv global 3.9.0<br></code></pre></td></tr></table></figure></li><li><p>下面的命令会将当前目录的 Python 版本设置为 3.11.0。</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pyenv <span class="hljs-built_in">local</span> 3.11.0<br></code></pre></td></tr></table></figure></li><li><p>你可以使用 pyenv versions 命令查看所有已安装的 Python 版本，以及当前正在使用的版本。</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pyenv versions<br></code></pre></td></tr></table></figure></li><li><p>如果你想切换到另一个版本，你可以再次使用 pyenv global 或 pyenv local 命令。</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程心得</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>ubuntu 20.x +</tag>
+      
+      <tag>pyenv</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>很好用的英语口语反面教材列表</title>
     <link href="/2023/07/31/%E5%BE%88%E5%A5%BD%E7%94%A8%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E5%8F%8D%E9%9D%A2%E6%95%99%E6%9D%90%E5%88%97%E8%A1%A8/"/>
     <url>/2023/07/31/%E5%BE%88%E5%A5%BD%E7%94%A8%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E5%8F%8D%E9%9D%A2%E6%95%99%E6%9D%90%E5%88%97%E8%A1%A8/</url>
@@ -11,6 +69,18 @@
     <content type="html"><![CDATA[<blockquote><p>很好，我现在就是阿米利卡的半个空军了😂😂😂</p></blockquote><img src="/2023/07/31/%E5%BE%88%E5%A5%BD%E7%94%A8%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E5%8F%8D%E9%9D%A2%E6%95%99%E6%9D%90%E5%88%97%E8%A1%A8/%E5%BE%88%E5%A5%BD%E7%94%A8%E7%9A%84%E5%8F%8D%E9%9D%A2%E6%95%99%E6%9D%90.jpg" class="" title="反面教材">]]></content>
     
     
+    <categories>
+      
+      <category>笑话</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>英语</tag>
+      
+    </tags>
     
   </entry>
   
