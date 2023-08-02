@@ -274,15 +274,91 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2023/08/01/%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93%E4%B8%8B%E6%88%91%E4%BB%8E%E6%94%BE%E5%81%87%E5%88%B0%E7%8E%B0%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E4%BA%8B/" target="_self">
-          记录下我从放假到现在发生的事
+        <a href="/2023/08/02/%E5%9C%A8%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84fluid%E4%B8%BB%E9%A2%98%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B8%83%E5%B1%80/" target="_self">
+          在基于hexo的fluid主题中创建自定义布局
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/01/%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93%E4%B8%8B%E6%88%91%E4%BB%8E%E6%94%BE%E5%81%87%E5%88%B0%E7%8E%B0%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E4%BA%8B/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/02/%E5%9C%A8%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84fluid%E4%B8%BB%E9%A2%98%E4%B8%AD%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B8%83%E5%B1%80/" target="_self">
         <div>
-          感觉这篇会很有争议，我现在能做的只有把我自己想到的写下来……很乱见谅。再最后总结下我自己的问题。先说背景   更早以前我爹妈离婚，我跟着我爹，而我妹妹则跟着我妈。 我爹在店面经过洪灾，火灾的洗礼，以及他自己身上发生的离婚，至亲过世，让我发现他的身边好像已经没有了那种活力 因此我个人感觉他的事业已经开始每况日下，半死不活。在后面的广东之旅中我更深刻的体会到了这一点（也许是我被害妄想） 他现在除了自
+          在网上找了一圈，没发现fluid中的自定义布局该怎么创建（可能是我懒找不到🤣），参照现有页面以及和大语言模型做对抗训练给写出来了，在此记录下流程。  示例需求是：“创建一个日记页，存储以‘日记’为tag的文章并计数”。如下：     注意：本主题安装方式为npm安装，安装步骤中会有具体的路径说明；若是使用压缩包安装的朋友们可以直接在对应的主题文件夹下找到这里记录的配置文件。   创建新页面，这里
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-02 20:36" pubdate>
+              2023-08-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%A0%81%E5%86%9C%E5%BF%83%E5%BE%97/" class="category-chain-item">码农心得</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%A0%81%E5%86%9C%E5%BF%83%E5%BE%97/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ejs/">#ejs</a>
+            
+              <a href="/tags/hexo/">#hexo</a>
+            
+              <a href="/tags/fluid/">#fluid</a>
+            
+              <a href="/tags/%E6%A8%A1%E6%9D%BF/">#模板</a>
+            
+              <a href="/tags/%E5%B8%83%E5%B1%80/">#布局</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/08/01/%E3%80%8A%E6%88%91%E7%9A%84%E5%89%8D%E5%8D%8A%E7%94%9F%E3%80%8B/" target="_self">
+          《我的前半生》
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/08/01/%E3%80%8A%E6%88%91%E7%9A%84%E5%89%8D%E5%8D%8A%E7%94%9F%E3%80%8B/" target="_self">
+        <div>
+          感觉这篇会很有争议，我现在能做的只有把我自己想到的写下来……很乱见谅。再最后总结下我自己的问题。   更早以前在这里费些大篇幅讲述下我双亲离婚的经过和陈总的关系，以及为什么会变成现在这样子的吧。 2019年7月21日，我还在北大青鸟花大钱学计算机时，我爹很罕见地直接到了我的寝室门口找我，他神情严肃，见到我就直接招呼我过来就不发一语，我也没多想就跟着他上了车，在路上时，他告诉我我妈出轨，也很直接的
         </div>
       </a>
 
@@ -301,6 +377,8 @@
             <i class="iconfont icon-tags"></i>
             
               <a href="/tags/%E8%BF%87%E5%BE%80/">#过往</a>
+            
+              <a href="/tags/%E6%97%A5%E8%AE%B0/">#日记</a>
             
           </div>
         
@@ -411,7 +489,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BF%83%E5%BE%97/" class="category-chain-item">编程心得</a>
+  <a href="/categories/%E7%A0%81%E5%86%9C%E5%BF%83%E5%BE%97/" class="category-chain-item">码农心得</a>
   
   
 
